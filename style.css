@@ -26,6 +26,8 @@
     background-color: white;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar .logo{
@@ -34,7 +36,7 @@
     margin-left: 10%;
 }
 
-.navbar .logo h2{
+.navbar .logo h1{
     color: var(--cor4);
     font-family: var(--font2);
     font-size: 34px;
@@ -91,13 +93,13 @@
     /* border: 1px solid black;   */
 }
 
-.headline h2{
+.headline #sobre-titulo{
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 15px;
 }
 
-.headline h1{
+.headline #titulo{
     font-size: 75px;
     color: var(--cor4);
     
@@ -108,6 +110,7 @@
     color: #727070;
     margin-top: 10px;
     margin-bottom: 15px;
+    
 }
 
 .botao-ctt{
@@ -141,11 +144,9 @@
 section{
     display: inline-block;
     margin-top: 80px;
-    border: 1px solid black;
-    width: 90%;
+    /* border: 1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
-    height: 400px;
     padding: 5%;
     text-align: center;
     
@@ -159,3 +160,90 @@ section h2{
     color: var(--cor4);
 
 }
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    /* 30% pois são 3 cards */
+    width: 30%;
+    /* 1% para complementar os 30% */
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    cursor: pointer;
+}
+
+.card img{
+    width: 64px;
+}
+
+.card h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Processo para tirar o conteudo e mostrar outro utilizando o :hover */
+.texto-oculto{
+    display: none;
+}
+/* Processo para tirar o conteudo e mostrar outro utilizando o :hover */
+.card:hover{
+    background-color: var(--cor1);
+    color: white;
+    padding: 50px;
+    
+}
+/* Processo para tirar o conteudo e mostrar outro utilizando o :hover */
+.card:hover img{
+    display: none;
+}
+/* Processo para tirar o conteudo e mostrar outro utilizando o :hover */
+.card:hover .card-text{
+    display: none;
+}
+/* Processo para tirar o conteudo e mostrar outro utilizando o :hover */
+.card:hover .texto-oculto{
+    display: block;
+}
+
+footer{
+    position: relative;
+    margin-top: 100px;
+    height: 200px;
+    background-image: linear-gradient(180deg,#2a2f83,#150E40,black); 
+    border-top: 2px solid #c81c6f;
+    z-index: 0;
+}
+
+footer .rodape{
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+footer #titulo-rodape{
+    margin-bottom: 10px;
+    color: white;
+    font-family: var(--font2);
+    font-size: 34px; 
+}
+
+footer #direito{
+    text-align: center;
+    color: white;
+}
+
+.whats img{
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+}
+
+

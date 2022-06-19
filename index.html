@@ -8,12 +8,13 @@
     <meta name="keywords" content="Digital College, Fullstack">
     <title>Digital College</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-           <h2>O marketeiro</h2>
+           <h1>O marketeiro</h1>
         </div>
         <div class="menu">
             <a href="#">Home</a>
@@ -24,8 +25,8 @@
     </nav> 
     <header class="header">
         <div class="headline">
-            <h2>voçê achou a melhor</h2>
-            <h1>Agência Digital</h1>
+            <h2 id="sobre-titulo">voçê achou a melhor</h2>
+            <h2 id="titulo">Agência Digital</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex nulla nesciunt voluptatum id itaque saepe, rem in exercitationem blanditiis deleniti nemo dolorem perferendis debitis architecto numquam accusamus illo tenetur!</p>
             <a class="botao-ctt" href="#">Contrate Agora</a>
         </div>
@@ -34,7 +35,53 @@
         </div>
     </header> 
     <section>
-        <h2>O que podemos fazer pelo seu negócio ?</h2>   
-    </section> 
+        <h2>O que podemos fazer pelo seu negócio ?</h2> 
+        <div class="servicos">
+            <div class="card">
+                <img src="imagens/web-programming.png" alt="">
+                <div class="card-text">
+                    <h3>Desenvolvimento de sites</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+                <div class="texto-oculto">
+                    <h3>Outro Conteudo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagens/celular.png" alt="">
+                <div class="card-text">
+                    <h3>Desenvolvimento de apps</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+                <div class="texto-oculto">
+                    <h3>Outro Conteudo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagens/marketing.png" alt="">
+                <div class="card-text">
+                    <h3>Marketing Digital</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+                <div class="texto-oculto">
+                    <h3>Outro Conteudo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quidem sequi fugit iste aspernatur, molestias quam cum natus, accusamus ipsum vel totam iure illum corporis quo maiores a corrupti?</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <div class="whats">
+        <a href="https://api.whatsapp.com/send?phone=5585000000000&text=Simulando%20numero%20de%20wpp" target="_blank"><img src="imagens/whats.png" alt="Botão para direcionar ao whatsapp"></a>
+    </div>
+    <footer>
+        <div class="rodape">
+            <h1 id="titulo-rodape">O marketeiro</h1>
+            <p>Um site feito com HTML E CSS</p>
+        </div>
+        <p id="direito">&copy;Todos os direitos reservados</p>
+    </footer> 
+    
 </body>
 </html>
